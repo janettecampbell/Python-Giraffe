@@ -1,8 +1,5 @@
-color = input("Enter a color: ")
-plural_noun = input("Enter a plural noun: ")
-celebrity = input("Enter a celebrity: ")
+def cube(num):
+    return num * num * num
 
-
-print(f"Roses are {color}")
-print(f"{plural_noun} are blue")
-print(f"I love {celebrity}")
+result = cube(4)
+print(result)
