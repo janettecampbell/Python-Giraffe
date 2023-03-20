@@ -1,14 +1,5 @@
-def translate(phrase):
-    translation = ""
+employee_file = open("index.html", "w")
 
-    for letter in phrase:
-        if letter.lower() in "aeiou":
-            if letter.isupper():
-                translation += "G"
-            else:
-                translation += "g"
-        else:
-            translation += letter
-    return translation
+employee_file.write("<p>This is HTML.</p>")
 
-print(translate(input("Enter a phrase: ")))
+employee_file.close()
