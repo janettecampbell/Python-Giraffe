@@ -1,5 +1,3 @@
-employee_file = open("index.html", "w")
+import useful_tools
 
-employee_file.write("<p>This is HTML.</p>")
-
-employee_file.close()
+print(useful_tools.roll_dice(10))
