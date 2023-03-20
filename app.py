@@ -1,17 +1,14 @@
-secret_word = "giraffe"
-guess = ""
-guess_count = 0
-guess_limit = 3
-out_of_guesses = False
+def translate(phrase):
+    translation = ""
 
-while guess != secret_word and not(out_of_guesses):
-    if guess_count < guess_limit:
-        guess = input("Enter guess: ")
-        guess_count += 1
-    else:
-        out_of_guesses = True
+    for letter in phrase:
+        if letter.lower() in "aeiou":
+            if letter.isupper():
+                translation += "G"
+            else:
+                translation += "g"
+        else:
+            translation += letter
+    return translation
 
-if out_of_guesses:
-    print("Out of guesses. You Loose.")
-else:
-    print("You win!")
+print(translate(input("Enter a phrase: ")))
